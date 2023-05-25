@@ -50,8 +50,8 @@ ax.text(num_rounds - 0.5, max_winnings, f'Największa: {max_winnings:.2f} ({num_
 ax.axhline(avg_winnings, linestyle='--', color='black', alpha=0.5)
 ax.text(num_rounds - 0.5, avg_winnings, f'Średnia: {avg_winnings:.2f} ({num_paths_to_avg} ścieżek)', fontsize=8, color='black', ha='right')
 
-# Ustawienie zakresu osi y od 100 do największej wygranej
-ax.set_ylim(100, max_winnings)
+# Ustawienie zakresu osi y od 0 do największej wygranej
+ax.set_ylim(0, max_winnings)
 
 # Pozostała część kodu pozostaje bez zmian
 
